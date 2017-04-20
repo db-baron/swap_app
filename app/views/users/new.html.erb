@@ -1,10 +1,18 @@
-<h2>Registration Page</h2>
-<form action="/users" method="post">
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-6'>
 
-	<input type="text" id="Name" name = "user[name]">
-	<input type="text" id="Email" name = "user[email]">
-	<input type="text" id="Password" name = "user[password]">
-	<input type="text" id="Password_Confirmation" name = "user[password_confirmation">
-	<input type="submit" name="Join" value="Join">
-</form>
+    <h2>Secrets Registration Page</h2>
+    <form action="/users" method="post">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+    	<h4>Name:</h4><input type="text" class="form-control" id="Name" name = "user[name]"><br>
+    	<h4>Email:</h4> <input type="text" class="form-control" id="Email" name = "user[email]"><br>
+    	<h4>Password:</h4> <input type="text" class="form-control" id="Password" name = "user[password]"><br>
+    	<h4>Password Confirmation:</h4><input type="text" class="form-control" id="Password_Confirmation" name = "user[password_confirmation"><br>
+    	<input type="submit" name="Join" value="Join">
+    </form>
+
+    </div>
+  </div>
+</div>
